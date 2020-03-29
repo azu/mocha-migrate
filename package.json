@@ -1,0 +1,49 @@
+{
+  "name": "@azu/mocha-migrate",
+  "version": "1.0.0",
+  "description": "Mocha migration script for mocha v7",
+  "keywords": [
+    "mocha",
+    "migrate",
+    "console",
+    "cli"
+  ],
+  "homepage": "https://github.com/azu/mocha-migrate",
+  "bugs": {
+    "url": "https://github.com/azu/mocha-migrate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/mocha-migrate.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "src/cli.js",
+  "bin": {
+    "mocha-migrate": "src/cli.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "debug": "^4.1.1",
+    "js-beautify": "^1.10.3",
+    "json2yaml": "^1.1.0",
+    "jsonfile": "^6.0.1",
+    "log-symbols": "^3.0.0",
+    "mocha": "7.1.1",
+    "yargs": "^15.3.1"
+  }
+}
