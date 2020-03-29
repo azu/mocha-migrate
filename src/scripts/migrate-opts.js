@@ -44,7 +44,18 @@ const writeConfig = (type, content, _path) => {
 
 exports.init = (filepath, type, _path = process.cwd()) => {
   const content = loadMochaOpts({opts: filepath});
-  writeConfig(type, content, _path);
+  const types = require("mocha/lib/cli/run-option-metadata").types;
+  // filtering by types that remove alias and yargs property
+  const allowPropertyNames = Object.values(types).reduce((names, flagNames) => {
+    return names.concat(flagNames);
+  }, []);
+  const normalizedContent = Object.keys(content)
+      .filter(key => allowPropertyNames.includes(key))
+      .reduce((obj, key) => {
+        obj[key] = content[key];
+        return obj;
+      }, {});
+  writeConfig(type, normalizedContent, _path);
 };
 exports.command = 'migrate-opts';
 
