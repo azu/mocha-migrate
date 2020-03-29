@@ -1,6 +1,6 @@
 {
   "name": "@azu/mocha-migrate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mocha migration script for mocha v7",
   "keywords": [
     "mocha",
@@ -31,8 +31,7 @@
     "lib": "lib",
     "test": "test"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "publishConfig": {
     "access": "public"
   },
