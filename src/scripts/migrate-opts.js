@@ -61,10 +61,15 @@ exports.command = 'migrate-opts';
 
 exports.description = 'Migrate opts file to type that user wanted';
 
-exports.builder = yargs => yargs.option('file').option('type');
+exports.builder = yargs => yargs.option('file').option('type').option("rm");
 
 exports.handler = argv => {
   const filepath = path.join(process.cwd(), argv.file[0]);
   const type = argv.type;
   this.init(filepath, type);
+  // --rm remove mocha.opts
+  if (argv.rm) {
+    fs.unlinkSync(filepath);
+    console.log(`Success migration mocha.opts to .mocharc.${type}`);
+  }
 };
