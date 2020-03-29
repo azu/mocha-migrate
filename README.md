@@ -2,7 +2,7 @@
 
 [Mocha](https://mochajs.org/) migration script for mocha v7.
 
-This migration script is based on @wnghdcjfe works.
+This migration script is based on [@wnghdcjfe](https://github.com/wnghdcjfe) works.
 
 - [Create migrate script to change mocha.opts to \[json | js | yml | yaml\] by wnghdcjfe · Pull Request #4069 · mochajs/mocha](https://github.com/mochajs/mocha/pull/4069)
 
