@@ -24,7 +24,7 @@ Global installation:
     npm install --global @azu/mocha-migrate
     mocha-migrate migrate-opts -file ./test/mocha.opts -type js
 
-Additional features:
+Additional features: `-rm` remove `mocha.opts` after migration
 
     # migrate and remove mocha.opts
     npx @azu/mocha-migrate migrate-opts -file ./test/mocha.opts -type json -rm
