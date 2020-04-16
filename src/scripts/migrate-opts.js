@@ -26,7 +26,7 @@ const writeFile = {
     fs.writeFileSync(path.join(_path, `.mocharc.js`), setJsType(content)),
   json: (content, _path) =>
     jsonfile.writeFileSync(path.join(_path, `.mocharc.json`), content, {
-      spaces: 1
+      spaces: 2
     })
 };
 const writeConfig = (type, content, _path) => {
