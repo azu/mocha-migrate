@@ -1,6 +1,6 @@
 # @azu/mocha-migrate
 
-[Mocha](https://mochajs.org/) migration script for mocha v7.
+[Mocha](https://mochajs.org/) migration script from mocha v6 to mocha v7.
 
 This migration script is based on [@wnghdcjfe](https://github.com/wnghdcjfe) works.
 
