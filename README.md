@@ -1,6 +1,8 @@
 # @azu/mocha-migrate
 
-[Mocha](https://mochajs.org/) migration script from mocha v6 to mocha v7.
+[Mocha](https://mochajs.org/) migration script from mocha v6 to mocha v7+.
+
+- Migrate `mocha.opts` to `.mocharc.{json,js,yml,yaml}`
 
 This migration script is based on [@wnghdcjfe](https://github.com/wnghdcjfe) works.
 
